@@ -1,0 +1,16 @@
+{
+  "chromeWebSecurity": false,
+  "supportFile": "cypress/support/index.js",
+  "defaultCommandTimeout": 15000,
+  "pageLoadTimeout": 30000,
+  "watchForFileChanges": false,
+  "video": true,
+  "reporter": "mocha-allure-reporter",
+  "reporterOptions": {
+    "targetDir": "target/allure-results"
+  },
+  "env": {
+    "env": "",
+    "timeout": 0
+  }
+}

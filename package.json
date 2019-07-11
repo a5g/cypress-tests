@@ -1,0 +1,32 @@
+{
+  "name": "cypress-example-typescript-webpack",
+  "version": "1.0.0",
+  "description": "Example showing TypeScript tests with Cypress",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "pretest": "yarn install",
+    "test": "cypress run --spec cypress/integration/examples/actions.spec.js",
+    "run": "cypress run --spec cypress/integration/examples/actions.spec.js",
+    "open": "cypress open",
+    "build": "webpack --output-filename out.js --entry ./cypress/integration/spec.ts",
+    "report": "allure generate target/allure-results --clean -o target/allure-report && allure open target/allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/webpack-preprocessor": "^2.0.1",
+    "@types/chai": "^4.1.4",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.1.2",
+    "cypress": "^3.1.0",
+    "mocha": "^5.2.0",
+    "mocha-allure-reporter": "^1.4.0",
+    "ts-loader": "^4.5.0",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.10.0",
+    "typescript": "^3.0.1",
+    "webpack": "^4.17.1"
+  }
+}
